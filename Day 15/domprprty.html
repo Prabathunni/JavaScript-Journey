@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+        <!-- html Code -->
+
+<!-- 1) ParentNode: return the nodelist of an element -->
+
+<div id="parent"> 
+  <div id="child">CHild</div>
+</div>
+
+<!-- 2) childNodes: return the nodelist of an element -->
+
+  <ul id="listitem">
+    <li>Child-1</li>
+    <li>Child-2</li>
+    <li>Child-3</li>
+    <li>Child-4</li>
+  </ul>
+
+<!-- 3) innerHTML: sets a condition to html dom -->
+
+<div id="divElement">
+  <p>Hellooo mechuuuuuu</p>
+</div>
+
+
+
+<!-- 4) textContent: sets a text content to html dom -->
+
+<div id="text">
+  <p>HAaaaaiaaaa</p>
+</div>
+  
+
+
+<script>
+
+  const childElement = document.getElementById('child');
+  console.log(childElement);
+
+  const parentElement = childElement.parentNode   //property
+  console.log(parentElement);
+
+
+  // for childNode 
+
+  const parentElement2 = document.getElementById('listitem')
+  console.log(parentElement2);
+  
+  const childElement2 = parentElement2.childNodes;  //property
+  console.log(childElement2);
+
+
+  // innerHTML method
+  const divElment =document.getElementById('divElement');
+  console.log(divElment);
+
+  divElment.innerHTML='<h1 style=color:blue>Luminar Technolab </h1>'  //property
+
+
+
+  // for textContent Method
+
+  const textElement = document.getElementById('text');
+  console.log(textElement);
+
+  textElement.textContent='MEARN STACK WEB DEVELOPER';
+  
+  
+
+
+</script>
+
+
+</body>
+</html>

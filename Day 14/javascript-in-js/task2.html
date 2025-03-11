@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color</title>
+</head>
+<body>
+
+    <div>
+        <h2 class="cls">Heading</h2>
+        <p class="cls">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="cls">Qui facilis quis deleniti distinctio molestiae odio quidem excepturi!</p>
+        <p class="cls">This is a paragraph inside the div.</p>
+    </div>
+
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+        function changeColor() {
+            // Convert HTMLCollection to an array and apply map
+            Array.from(document.getElementsByClassName("cls")).map(element => {
+                element.style.backgroundColor = "red";
+            });
+        }
+    </script>
+
+</body>
+</html>

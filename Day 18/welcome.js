@@ -57,8 +57,10 @@ function search(){
   let key = emp.value;
   let employee = JSON.parse(localStorage.getItem(key));
 
+  
   // for displaying the employee in card
-  result.innerHTML = `  <div class="card mt-3" style="width: 18rem;">
+  result.innerHTML = ` 
+   <div class="card mt-3" style="width: 18rem;">
    <ul class="list-group list-group-flush">
     <li class="list-group-item">${employee.id}</li>
     <li class="list-group-item">${employee.name}</li>
